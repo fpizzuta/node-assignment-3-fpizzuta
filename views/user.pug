@@ -1,0 +1,12 @@
+html
+  head
+    title User Page
+    link(href='/css/style.css', rel='stylesheet')
+  body
+    h1 Welcome #{username}
+    each post in posts
+      .post          
+        h2 #{post.title}
+        h3 #{post.date}
+        h3 #{post.audience}
+        h3 #{post.message}
