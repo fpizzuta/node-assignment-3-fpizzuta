@@ -5,10 +5,6 @@ router.get('/', (req, res, next)=>{
  res.end("/users requested");
 });
 
-router.get('/login', (req, res, next)=>{
- console.log("/users/login requested");
- res.render('login');
-});
 
 router.get('/user', (req, res, next)=>{
 	response = {
@@ -18,12 +14,14 @@ router.get('/user', (req, res, next)=>{
 				title: 'Post 1',
 				date: '1/1/19',
 				audience: 'all',
+				image: 'Image for Post 1',
 				message: 'This is message 1'
 			},
 			{
 				title: 'Post 2',
 				date: '1/5/19',
 				audience: 'unit1',
+				image: 'Image for Post 2',
 				message: 'This is message 2'
 			}
 		]
